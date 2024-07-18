@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  color: #234cad;
+}
+.hero-ctn {
+  display: flex;
+  width: 90%;
+  margin: 60px auto;
+  border-radius: 20px;
+  background-color: #f2f6ff;
+}
+.business-ctn {
+  width: 40%;
+  margin: 20px 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.heading {
+  display: block;
+  width: 300px;
+  font-size: 35px;
+}
+.content-line {
+  display: block;
+  width: 400px;
+  font-size: 15px;
+  font-weight: 600;
+}
+button {
+  padding: 12px;
+  width: 150px;
+  border-radius: 32px;
+  border: 2px solid #234cad;
+  font-size: 18px;
+  font-weight: 800;
+  color: #234cad;
+  background-color: #f2f6ff;
+}
+
+.icons-ctn {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+}
+/* Icons Container like Document, Uploading Document, etc */
+
+.left-icons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding: 30px 20px;
+  position: relative;
+}
+.document-ctn {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.document-ctn img {
+  width: 50%;
+}
+.uploading-document-ctn {
+  display: flex;
+  column-gap: 20px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 10px;
+}
+.uploading-document-ctn h3 {
+  font-size: 18px;
+}
+.uploading-document-ctn span {
+  font-size: 14px;
+}
+.team-meeting-ctn {
+  width: 230px;
+  border-radius: 20px;
+  padding: 8px 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.team-meeting-ctn h3 {
+  font-size: 18px;
+}
+.team-inside-ctn {
+  display: flex;
+  column-gap: 10px;
+}
+.team-inside-ctn span {
+  font-size: 12px;
+}
+.team-meeting-users-ctn {
+  display: flex;
+  align-items: center;
+}
+.circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f4ff;
+  color: #1e55d6;
+  font-weight: bold;
+  font-size: 8px;
+  margin-left: -10px;
+  border: 2px solid white;
+}
+.circle:first-child {
+  margin-left: 0;
+}
+.john-smith-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 14px 10px;
+  column-gap: 10px;
+}
+.john-smith-ctn span {
+  font-size: 12px;
+}
+.js-time-ctn {
+  font-size: 8px;
+}
+.anna-brooks-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 14px 10px;
+  column-gap: 10px;
+}
+.anna-brooks-ctn span {
+  font-size: 12px;
+}
+.anna-brooks-time-ctn {
+  font-size: 8px;
+}
+.right-icons-ctn {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  position: absolute;
+  float: right;
+  right: 50px;
+}
+.upload-icon-ctn {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 140px;
+  background-color: white;
+}
+.upload-icon-ctn span {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.message-saved-ctn {
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 14px 10px;
+  column-gap: 10px;
+}
+.message-saved-ctn span {
+  font-size: 12px;
+}
+.message-ctn {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.message-ctn img {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .business-ctn {
+    width: 25%;
+  }
+  .content-line {
+    width: 300px;
+  }
+  .right-icons-ctn {
+    display: flex;
+    right: 0;
+  }
+  .john-smith-ctn {
+    width: 260px;
+  }
+  .message-saved-ctn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .business-ctn {
+    margin-left: 13px;
+  }
+  .heading {
+    display: block;
+    width: 200px;
+    font-size: 24px;
+  }
+  .content-line {
+    width: 250px;
+    font-size: 12px;
+  }
+  .icons-ctn {
+    padding: 30px 4px;
+  }
+  .left-icons {
+    row-gap: 40px;
+  }
+  .uploading-document-ctn {
+    width: 200px;
+  }
+  .team-meeting-ctn {
+    z-index: 1;
+    width: 200px;
+  }
+  .message-saved-ctn {
+    width: 290px;
+    z-index: 2;
+  }
+  .john-smith-ctn {
+    width: 200px;
+  }
+  .right-icons-ctn {
+    margin-top: 3px;
+  }
+}
+@media (max-width: 425px) {
+  .hero-ctn {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
+  .business-ctn {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
+  .heading {
+    width: 90px;
+    font-size: 14px;
+  }
+  .content-line {
+    width: 100px;
+    font-size: 10px;
+  }
+  button {
+    width: 100px;
+    height: 43px;
+    font-size: 12px;
+  }
+  .icons-ctn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+  .left-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 10px;
+  }
+  .uploading-document-ctn {
+    width: 160px;
+  }
+  .uploading-document-ctn img {
+    width: 40px;
+  }
+  .uploading-document-ctn h3 {
+    font-size: 14px;
+  }
+  .uploading-document-ctn span {
+    font-size: 10px;
+  }
+
+  .right-icons-ctn {
+    left: 250px;
+    width: 160px;
+  }
+  .anna-brooks-ctn {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 20px; */
+  }
+  .anna-brooks-ctn h3 {
+    font-size: 14px;
+  }
+  .anna-brooks-ctn span {
+    font-size: 10px;
+  }
+  .message-ctn {
+    display: none;
+  }
+  .team-meeting-ctn {
+    width: 140px;
+  }
+  .team-meeting-ctn img {
+    width: 34px;
+  }
+  .team-meeting-ctn h3 {
+    font-size: 14px;
+  }
+  .team-meeting-ctn span {
+    font-size: 8px;
+  }
+  .message-saved-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 110px;
+    height: 100px;
+    padding: 19px;
+  }
+  .message-saved-ctn img {
+    width: 60%;
+  }
+  .message-saved-ctn h3 {
+    font-size: 14px;
+  }
+  .message-saved-ctn span {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .hero-ctn {
+    height: 620px;
+  }
+  .right-icons-ctn {
+    left: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .document-ctn {
+    display: none;
+  }
+  .heading {
+    font-size: 10px;
+  }
+  .content-line {
+    font-size: 8px;
+  }
+  .upload-icon-ctn img {
+    width: 40px;
+  }
+  button {
+    height: 50px;
+  }
+  .anna-brooks-ctn img {
+    width: 40px;
+  }
+
+  .right-icons-ctn {
+    left: 150px;
+  }
+  .message-saved-ctn {
+    width: 120px;
+  }
+}
